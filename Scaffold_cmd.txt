@@ -1,0 +1,2 @@
+﻿Scaffold-DbContext "server=LENOVO-L340;database=MyGate;Integrated Security=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -O Models -f
+
