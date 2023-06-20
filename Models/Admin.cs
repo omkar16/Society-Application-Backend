@@ -16,4 +16,6 @@ public partial class Admin
     public string Password { get; set; } = null!;
 
     public string Contact { get; set; } = null!;
+
+    public string? Token { get; set; }
 }

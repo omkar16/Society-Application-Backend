@@ -23,7 +23,7 @@ public partial class MyGateContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-         modelBuilder.Entity<Admin>(entity =>
+        modelBuilder.Entity<Admin>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Admin__3214EC27B683B14F");
 
@@ -48,6 +48,9 @@ public partial class MyGateContext : DbContext
                 .IsUnicode(false);
             entity.Property(e => e.Password)
                 .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.Token)
+                .HasMaxLength(64)
                 .IsUnicode(false);
         });
 
